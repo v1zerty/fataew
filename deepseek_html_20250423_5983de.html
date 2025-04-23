@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой стильный сайт</title>
+    <style>
+        /* Сброс стилей и базовые настройки */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        /* Стили для шапки */
+        header {
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        /* Основное содержимое */
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card h2 {
+            color: #6e8efb;
+            margin-bottom: 1rem;
+        }
+        
+        /* Стили для подвала */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 0 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать</h1>
+        <p>Простой, но стильный сайт для всех</p>
+    </header>
+    
+    <div class="container">
+        <section class="card">
+            <h2>О нас</h2>
+            <p>Это пример современного, минималистичного сайта с приятными цветами и плавными переходами. Вы можете легко изменить этот текст и добавить свою информацию.</p>
+        </section>
+        
+        <section class="card">
+            <h2>Наши преимущества</h2>
+            <p>1. Чистый и понятный дизайн</p>
+            <p>2. Адаптивность под все устройства</p>
+            <p>3. Быстрая загрузка</p>
+        </section>
+    </div>
+    
+    <footer>
+        <p>© 2023 Мой стильный сайт. Все права защищены.</p>
+    </footer>
+</body>
+</html>
